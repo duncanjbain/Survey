@@ -3,6 +3,39 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.flex-outer {
-  display: flex;
+.container {
+  margin: auto;
+  max-width: 40em;
+}
+
+.surveyform {
+  display: grid;
+  grid-template-columns: [labels] 8em [controls] 1fr;
+  grid-auto-flow: row;
+  grid-gap: 0.8em 0.5em;
+  background: red;
+  padding: 1.2em;
+  width: 38em;
+}
+
+.surveyform > label,
+.surveyform > fieldset {
+  grid-column: labels;
+  grid-row: auto;
+}
+
+.surveyform > input,
+.surveyform > select,
+.surveyform > textarea,
+.surveyform > button {
+  grid-column: controls;
+  grid-row: auto;
+  padding: 0.4em;
+  border: 0;
+}
+
+
+.surveyform > fieldset,
+.surveyform > textarea {
+  grid-column: span 2;
 }
