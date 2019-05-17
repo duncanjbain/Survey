@@ -7,56 +7,53 @@
   </head>
 
   <body>
-      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <div class=container>
-    <header>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container">
+      <header>
         <h1 id="title">Changing Career? Fill in this short survey!</h1>
-        <p id="description">Are you thinking of changing career into a tech role? If so, please consider filling in this short survey in order to help us understand
-          the reasons why.</p>
-    </header>
+        <p id="description">Are you thinking of changing career into a tech role? If so, please consider filling in this short survey in order to help us understand the reasons why.</p>
+      </header>
 
-    <form id="survey-form" class="surveyform">
+      <form id="survey-form" class="surveyform">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name here" required />
 
-                <label for="name" id="name-label">Name</label>
-                <input type="text" id="name" placeholder="Enter your name here" required>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your email here" required />
 
-                <label for="email" id="email-label">Email</label>
-                <input type="email" id="email" placeholder="Enter your email here" required>
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" placeholder="Enter your age here" min="18" max="110" required />
+        
+        <label for="education">Education Level</label>
+        <select name="education" id="dropdown" required>
+          <option value="highschool">High School</option>
+          <option value="uniunder">Undergraduate University</option>
+          <option value="unipost">Postgraduate University</option>
+          <option value="doctorate">Doctorate</option>
+        </select>
 
-                <label for="number" id="number-label">Age</label>
-                <input type="number" id="number" placeholder="Enter your age here" min="18" max="110" required>
+        <fieldset>
+          <legend>Gender</legend>
+          <label> <input type="radio" name="gender" id="gender_male" required value="male" />Male</label>
+          <label> <input type="radio" name="gender" id="gender_female" required value="female" />Female</label>
+          <label> <input type="radio" name="gender" id="gender_prefernot" required value="prefernot" />Prefer not to say</label>
+        </fieldset>
 
-                <label for="education">Education Level</label>
-                  <select name="education" id="dropdown" required>
-                    <option value="highschool">High School</option>
-                    <option value="uniunder">Undergraduate University</option>
-                    <option value="unipost">Postgraduate University</option>
-                    <option value="doctorate">Doctorate</option>
-                  </select>
+        <fieldset>
+          <legend>Areas of Interest</legend>
+          <label><input type="checkbox" name="interests" id="interest_js" value="interest_js" />JavaScript</label>
+          <label><input type="checkbox" name="interests" id="interest_html" value="interest_html" />HTML</label>
+          <label><input type="checkbox" name="interests" id="interest_css" value="interest_css" />CSS</label>
+          <label><input type="checkbox" name="interests" id="interest_python" value="interest_python" />Python</label>
+          <label><input type="checkbox" name="interests" id="interest_js" value="interest_front" />Front End</label>
+          <label><input type="checkbox" name="interests" id="interest_js" value="interest_back" />Back End</label>
+        </fieldset>
 
-                <fieldset>
-                    <legend>Gender</legend>
-                    <label> <input type="radio" name="gender" id="gender_male" required value="male">Male</label>
-                    <label> <input type="radio" name="gender" id="gender_female" required value="female">Female</label>
-                    <label> <input type="radio" name="gender" id="gender_prefernot" required value="prefernot">Prefer not to say</label>
-                  </fieldset>
+        <label for="reason">Why change?</label>
+        <textarea name="reason" cols="20" rows="10">Describe the reasons for your change...</textarea>
 
-                <fieldset>
-                  <legend>Areas of Interest</legend>
-                  <label><input type="checkbox" name="interests" id="interest_js" value="interest_js">JavaScript</label>
-                  <label><input type="checkbox" name="interests" id="interest_html" value="interest_html">HTML</label>
-                  <label><input type="checkbox" name="interests" id="interest_css" value="interest_css">CSS</label>
-                  <label><input type="checkbox" name="interests" id="interest_python" value="interest_python">Python</label>
-                  <label><input type="checkbox" name="interests" id="interest_js" value="interest_front">Front End</label>
-                  <label><input type="checkbox" name="interests" id="interest_js" value="interest_back">Back End</label>
-                </fieldset>
-
-                <label for="reason" >Why change?</label>
-                <textarea name="reason" cols="20" rows="10">Describe the reasons for your change...</textarea>
-
-                <input type="submit" id="submit">
-
-    </form>
-  </div>
+        <input type="submit" id="submit" />
+      </form>
+    </div>
   </body>
 </html>
