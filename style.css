@@ -1,9 +1,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-image: url(background.jpg);
-    background-size: auto;
-    background-repeat: no-repeat;
+    /** background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); **/
+    background-image: linear-gradient(to right top, #051937, #1b2b59, #393d7d, #5c4ea0, #845ec2);
 }
 
 html {
@@ -23,7 +22,7 @@ html {
   max-width: 40em;
   background: white;
   border-radius: 5px;
-  padding: 5px;
+  padding: 15px;
   margin-top: 50px;
   border-style: solid;
   border-color: black;
@@ -65,9 +64,21 @@ html {
   grid-row: auto;
 }
 
-
-
 .surveyform > fieldset,
 .surveyform > textarea {
   grid-column: span 2;
+}
+
+label {
+  display: inline-block;
+}
+
+.roundInput {
+  border-radius: 5px;
+  
+}
+
+
+.inputButton {
+  background-color:#00C9A7;
 }

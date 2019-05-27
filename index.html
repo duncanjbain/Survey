@@ -16,32 +16,32 @@
 
       <form id="survey-form" class="surveyform">
         <label for="name" id="name-label">Name</label>
-        <input type="text" id="name" placeholder="Enter your name here" required />
+        <input type="text" id="name" placeholder="Your name" required class="roundInput"/>
 
         <label for="email" id="email-label">Email</label>
-        <input type="email" id="email" placeholder="Enter your email here" required />
+        <input type="email" id="email" placeholder="Your email" required class="roundInput"/>
 
         <label for="number" id="number-label">Age</label>
-        <input type="number" id="number" placeholder="Enter your age here" min="18" max="110" required />
+        <input type="number" id="number" placeholder="Your age" min="18" max="110" required class="roundInput" />
         
         <label for="education">Education Level</label>
-        <select name="education" id="dropdown" required>
+        <select name="education" id="dropdown" required class="roundInput">
           <option value="highschool">High School</option>
           <option value="uniunder">Undergraduate University</option>
           <option value="unipost">Postgraduate University</option>
           <option value="doctorate">Doctorate</option>
         </select>
 
-        <fieldset>
+        <fieldset class="roundInput">
           <legend>Gender</legend>
           <label> <input type="radio" name="gender" id="gender_male" required value="male" />Male</label>
           <label> <input type="radio" name="gender" id="gender_female" required value="female" />Female</label>
           <label> <input type="radio" name="gender" id="gender_prefernot" required value="prefernot" />Prefer not to say</label>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="roundInput">
           <legend>Areas of Interest</legend>
-          <label><input type="checkbox" name="interests" id="interest_js" value="interest_js" />JavaScript</label>
+          <label ><input type="checkbox" name="interests" id="interest_js" value="interest_js"/>JavaScript</label>
           <label><input type="checkbox" name="interests" id="interest_html" value="interest_html" />HTML</label>
           <label><input type="checkbox" name="interests" id="interest_css" value="interest_css" />CSS</label>
           <label><input type="checkbox" name="interests" id="interest_python" value="interest_python" />Python</label>
@@ -50,9 +50,9 @@
         </fieldset>
 
         <label for="reason">Why change?</label>
-        <textarea name="reason" cols="20" rows="10">Describe the reasons for your change...</textarea>
+        <textarea name="reason" cols="20" rows="10" placeholder="Your reasons for changing career" class="roundInput"></textarea>
 
-        <input type="submit" id="submit" />
+        <input type="submit" id="submit" class="inputButton"/>
       </form>
     </div>
   </body>
