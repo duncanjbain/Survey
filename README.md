@@ -9,4 +9,4 @@ To view a live preview, check it out on CodePen [here](https://codepen.io/duncan
 - CSS
 
 # Authors
-[Duncan Bain]([https://github.com/duncanjbain/)
+[Duncan Bain](https://github.com/duncanjbain/)
